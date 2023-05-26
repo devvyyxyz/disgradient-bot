@@ -19,8 +19,8 @@ message = "We see that you are using require(...) inside your code. We currently
 channel = "stable-21_11"
 
 [env]
-PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin"
 XDG_CONFIG_HOME = "/home/runner/.config"
+PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin"
 npm_config_prefix = "/home/runner/$REPL_SLUG/.config/npm/node_global"
 
 [gitHubImport]
@@ -82,3 +82,6 @@ support = true
       sourceMaps = true
       stopOnEntry = false
       type = "pwa-node"
+
+[deployment]
+run = ["sh", "-c", "node index.js"]
